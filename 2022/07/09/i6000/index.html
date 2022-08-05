@@ -1,0 +1,546 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="背景">
+<meta property="og:type" content="article">
+<meta property="og:title" content="i6000">
+<meta property="og:url" content="http://example.com/2022/07/09/i6000/index.html">
+<meta property="og:site_name" content="5-12 23:30">
+<meta property="og:description" content="背景">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-07-09T13:23:06.000Z">
+<meta property="article:modified_time" content="2022-07-21T09:40:34.408Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="批量部署">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  <title>i6000 - 5-12 23:30</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="i6000">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-07-09 13:23" pubdate>
+        July 9, 2022 pm
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      12k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      102 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">i6000</h1>
+            
+            <div class="markdown-body">
+              <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><span id="more"></span>
+
+<h2 id="批量部署平台包—-gt-逐渐形成一键部署的脚本"><a href="#批量部署平台包—-gt-逐渐形成一键部署的脚本" class="headerlink" title="批量部署平台包—&gt;逐渐形成一键部署的脚本"></a>批量部署平台包—&gt;逐渐形成一键部署的脚本</h2><h3 id="获取当前目录下的tar包列表文件："><a href="#获取当前目录下的tar包列表文件：" class="headerlink" title="获取当前目录下的tar包列表文件："></a>获取当前目录下的tar包列表文件：</h3><figure class="highlight tap"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></div></td><td class="code"><pre><code class="hljs tap">[root@mysql test]<span class="hljs-comment"># ll *.tar|awk -F &quot; &quot; &#x27;&#123;print$9&#125;&#x27; &gt; tar_name.txt</span><br>[root@mysql test]<span class="hljs-comment"># ll</span><br>total 296756<br>-rw-r--r--<span class="hljs-number"> 1 </span>root root       <span class="hljs-number"> 22 </span>Apr<span class="hljs-number"> 21 </span>14:39 backup<br>-rw-r--r--<span class="hljs-number"> 1 </span>root root        <span class="hljs-number"> 5 </span>Apr<span class="hljs-number"> 21 </span>14:41 file1<br>-rw-r--r--<span class="hljs-number"> 1 </span>root root        <span class="hljs-number"> 0 </span>Apr<span class="hljs-number"> 21 </span>14:37 file12<br>-rw-r--r--<span class="hljs-number"> 1 </span>root root        <span class="hljs-number"> 5 </span>Apr<span class="hljs-number"> 21 </span>14:39 file1.orig<br>-rw-r--r--<span class="hljs-number"> 1 </span>root root       <span class="hljs-number"> 44 </span>Apr<span class="hljs-number"> 21 </span>16:27 file2<br>-rw-r--r--<span class="hljs-number"> 1 </span>root root<span class="hljs-number"> 303847936 </span>Jul <span class="hljs-number"> 8 </span>17:44 i6000-angular-front_2.0.26.20220424163738.tar<br>-rw-r--r--<span class="hljs-number"> 1 </span>root root      <span class="hljs-number"> 233 </span>Jul <span class="hljs-number"> 8 </span>17:36 i6000-angular-front-svc.yml<br>-rw-r--r--<span class="hljs-number"> 1 </span>root root     <span class="hljs-number"> 1285 </span>Jul <span class="hljs-number"> 8 </span>17:36 i6000-angular-front.yml<br>-rw-r--r--<span class="hljs-number"> 1 </span>root root       <span class="hljs-number"> 46 </span>Jul<span class="hljs-number"> 21 </span>13:02 tar_name.txt<br>-rw-r--r--<span class="hljs-number"> 1 </span>root root        <span class="hljs-number"> 0 </span>Jun<span class="hljs-number"> 16 </span>09:50 test1.sh<br>[root@mysql test]<span class="hljs-comment"># cat tar_name.txt </span><br>i6000-angular-front_2.0.26.20220424163738.tar<br></code></pre></td></tr></table></figure>
+
+<p>dir /b /s  *.tar &gt;&gt; tar.txt</p>
+<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><code class="hljs llvm">[root<span class="hljs-title">@mysql</span> test]# cat pkg_name-all.txt <br><span class="hljs-type">i6000</span>-api-manage_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220609092606</span>.tar<br><span class="hljs-type">i6000</span>-cmdb-access_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220616105828</span>.tar<br><span class="hljs-type">i6000</span>-cmdb-automatic_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220609100048</span>.tar<br><span class="hljs-type">i6000</span>-cmdb-column-pair-config_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220609100554</span>.tar<br><span class="hljs-type">i6000</span>-cmdb-data-access_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220613105949</span>.tar<br><span class="hljs-type">i6000</span>-cmdb-front_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220616111529</span>.tar<br><span class="hljs-type">i6000</span>-cmdb-model_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220616111200</span>.tar<br><span class="hljs-type">i6000</span>-cmdb-read_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220615152514</span>.tar<br><span class="hljs-type">i6000</span>-cmdb-write_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220609095537</span>.tar<br><span class="hljs-type">i6000</span>-cmdb-sync-task_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220616090831</span>.tar<br>nms-agent-ms_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220608092333</span>.tar<br>nms-agent-ui_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220602102110</span>.tar<br><span class="hljs-type">i6000</span>-cicd_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220609164721</span>.tar<br><span class="hljs-type">i6000</span>-flow-api_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.202206161508</span>.tar<br><span class="hljs-type">i6000</span>-flow-main_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.202206091705</span>.tar<br>pi<span class="hljs-number">6000</span>-audit-web_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.202206101605</span>.tar<br>pi<span class="hljs-number">6000</span>-bpm-web_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.202206101410</span>.tar<br>pi<span class="hljs-number">6000</span>-mdl-web_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.202206101605</span>.tar<br>pi<span class="hljs-number">6000</span>-ua-sso_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.202206101410</span>.tar<br>pi<span class="hljs-number">6000</span>-ua-web_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.202206101410</span>.tar<br>pi<span class="hljs-number">6000</span>-uds-web_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.202206101410</span>.tar<br><span class="hljs-type">i6000</span>-job-main_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220609084723</span>.tar<br><span class="hljs-type">i6000</span>-log-backend_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220616145050</span>.tar<br><span class="hljs-type">i6000</span>-log-reverse_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220525105559</span>.tar<br><span class="hljs-type">i6000</span>-mobile-app_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220610155408</span>.tar<br>mip-admin_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220607195315</span>.tar<br>mip-analyse_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220607195439</span>.tar<br>mip-gateway_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220620193300</span>.tar<br>mip-manage-user_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220607195442</span>.tar<br>mip-publish_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220607195559</span>.tar<br><span class="hljs-type">i6000</span>-alert-ms_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220608141351</span>.tar<br><span class="hljs-type">i6000</span>-alert-ui_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220516105029</span>.tar<br><span class="hljs-type">i6000</span>-collect-ms_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220608142456</span>.tar<br><span class="hljs-type">i6000</span>-collect-ui_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220428191517</span>.tar<br><span class="hljs-type">i6000</span>-kpi-search_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220609092512</span>.tar<br><span class="hljs-type">i6000</span>-kpicalc_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220609091447</span>.tar<br><span class="hljs-type">i6000</span>-monitor-public-ms_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220620085758</span>.tar<br><span class="hljs-type">i6000</span>-angular-front_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220424163738</span>.tar<br><span class="hljs-type">i6000</span>-cascade_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220608143922</span>.tar<br><span class="hljs-type">i6000</span>-public-config_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220606143439</span>.tar<br><span class="hljs-type">i6000</span>-public-portal_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220614153752</span>.tar<br><span class="hljs-type">i6000</span>-task-admin_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220606101313</span>.tar<br>pi<span class="hljs-number">6000</span>-gateway<span class="hljs-number">2</span>_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220608141200</span>.tar<br><span class="hljs-type">i6000</span>-safe-access_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220621135612</span>.tar<br><span class="hljs-type">i6000</span>-scene-main_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220609084708</span>.tar<br><span class="hljs-type">i6000</span>-show-graphic_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220606</span>.tar<br><span class="hljs-type">i6000</span>-store_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220609091608</span>.tar<br><span class="hljs-type">i6000</span>-tool-main_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220609085928</span>.tar<br><span class="hljs-type">i6000</span>-tool-monitor_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220609085958</span>.tar<br><span class="hljs-type">i6000</span>-tool-operator_<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220609090028</span>.tar<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="定义部署包相关的变量："><a href="#定义部署包相关的变量：" class="headerlink" title="定义部署包相关的变量："></a>定义部署包相关的变量：</h3><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs dart">变量<span class="hljs-number">1</span>、pkg_version（部署包版本）<br>[root<span class="hljs-meta">@mysql</span> test]# pkg_version=`cat tar_name.txt |awk -F <span class="hljs-string">&quot;_&quot;</span> <span class="hljs-string">&#x27;&#123;print<span class="hljs-subst">$2</span>&#125;&#x27;</span>|awk -v FS=<span class="hljs-string">&#x27;.&#x27;</span>  <span class="hljs-string">&#x27;&#123;print<span class="hljs-subst">$1FS</span><span class="hljs-subst">$2FS</span><span class="hljs-subst">$3FS</span><span class="hljs-subst">$4</span>&#125;&#x27;</span>`<br>[root<span class="hljs-meta">@mysql</span> test]# echo $pkg_version<br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220424163738</span><br><br>[root<span class="hljs-meta">@mysql</span> test]# echo $pkg_version &gt; pkg_version.txt<br>[root<span class="hljs-meta">@mysql</span> test]# cat pkg_version.txt <br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220424163738</span><br></code></pre></td></tr></table></figure>
+
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><code class="hljs dart">[root<span class="hljs-meta">@mysql</span> test]# cat pkg_name-all.txt |awk -F <span class="hljs-string">&quot;_&quot;</span> <span class="hljs-string">&#x27;&#123;print<span class="hljs-subst">$2</span>&#125;&#x27;</span>|awk -v FS=<span class="hljs-string">&#x27;.&#x27;</span>  <span class="hljs-string">&#x27;&#123;print<span class="hljs-subst">$1FS</span><span class="hljs-subst">$2FS</span><span class="hljs-subst">$3FS</span><span class="hljs-subst">$4</span>&#125;&#x27;</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220609092606</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220616105828</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220609100048</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220609100554</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220613105949</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220616111529</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220616111200</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220615152514</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220609095537</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220616090831</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220608092333</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220602102110</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220609164721</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.202206161508</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.202206091705</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.202206101605</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.202206101410</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.202206101605</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.202206101410</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.202206101410</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.202206101410</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220609084723</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220616145050</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220525105559</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220610155408</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220607195315</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220607195439</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220620193300</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220607195442</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220607195559</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220608141351</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220516105029</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220608142456</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220428191517</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220609092512</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220609091447</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220620085758</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220424163738</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220608143922</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220606143439</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220614153752</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220606101313</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220608141200</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220621135612</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220609084708</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220606</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220609091608</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220609085928</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220609085958</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220609090028</span><br><br></code></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs autoit">变量<span class="hljs-number">2</span>、pkg_name（部署包名称）：<br>[root<span class="hljs-symbol">@mysql</span> test]<span class="hljs-meta"># pkg_name=`cat tar_name.txt|awk -F <span class="hljs-string">&quot;_&quot;</span> <span class="hljs-string">&#x27;&#123;print$1&#125;&#x27;</span>`</span><br>[root<span class="hljs-symbol">@mysql</span> test]<span class="hljs-meta"># echo $pkg_name</span><br>i6000-angular-front<br><br>[root<span class="hljs-symbol">@mysql</span> test]<span class="hljs-meta"># echo $pkg_name &gt; pkg_name.txt</span><br>[root<span class="hljs-symbol">@mysql</span> test]<span class="hljs-meta"># cat pkg_name.txt </span><br>i6000-angular-front<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><code class="hljs llvm">[root<span class="hljs-title">@mysql</span> test]# cat pkg_name-all.txt|awk -F <span class="hljs-string">&quot;_&quot;</span> &#x27;&#123;print$<span class="hljs-number">1</span>&#125;&#x27;<br><span class="hljs-type">i6000</span>-api-manage<br><span class="hljs-type">i6000</span>-cmdb-access<br><span class="hljs-type">i6000</span>-cmdb-automatic<br><span class="hljs-type">i6000</span>-cmdb-column-pair-config<br><span class="hljs-type">i6000</span>-cmdb-data-access<br><span class="hljs-type">i6000</span>-cmdb-front<br><span class="hljs-type">i6000</span>-cmdb-model<br><span class="hljs-type">i6000</span>-cmdb-read<br><span class="hljs-type">i6000</span>-cmdb-write<br><span class="hljs-type">i6000</span>-cmdb-sync-task<br>nms-agent-ms<br>nms-agent-ui<br><span class="hljs-type">i6000</span>-cicd<br><span class="hljs-type">i6000</span>-flow-api<br><span class="hljs-type">i6000</span>-flow-main<br>pi<span class="hljs-number">6000</span>-audit-web<br>pi<span class="hljs-number">6000</span>-bpm-web<br>pi<span class="hljs-number">6000</span>-mdl-web<br>pi<span class="hljs-number">6000</span>-ua-sso<br>pi<span class="hljs-number">6000</span>-ua-web<br>pi<span class="hljs-number">6000</span>-uds-web<br><span class="hljs-type">i6000</span>-job-main<br><span class="hljs-type">i6000</span>-log-backend<br><span class="hljs-type">i6000</span>-log-reverse<br><span class="hljs-type">i6000</span>-mobile-app<br>mip-admin<br>mip-analyse<br>mip-gateway<br>mip-manage-user<br>mip-publish<br><span class="hljs-type">i6000</span>-alert-ms<br><span class="hljs-type">i6000</span>-alert-ui<br><span class="hljs-type">i6000</span>-collect-ms<br><span class="hljs-type">i6000</span>-collect-ui<br><span class="hljs-type">i6000</span>-kpi-search<br><span class="hljs-type">i6000</span>-kpicalc<br><span class="hljs-type">i6000</span>-monitor-public-ms<br><span class="hljs-type">i6000</span>-angular-front<br><span class="hljs-type">i6000</span>-cascade<br><span class="hljs-type">i6000</span>-public-config<br><span class="hljs-type">i6000</span>-public-portal<br><span class="hljs-type">i6000</span>-task-admin<br>pi<span class="hljs-number">6000</span>-gateway<span class="hljs-number">2</span><br><span class="hljs-type">i6000</span>-safe-access<br><span class="hljs-type">i6000</span>-scene-main<br><span class="hljs-type">i6000</span>-show-graphic<br><span class="hljs-type">i6000</span>-<span class="hljs-keyword">store</span><br><span class="hljs-type">i6000</span>-tool-main<br><span class="hljs-type">i6000</span>-tool-monitor<br><span class="hljs-type">i6000</span>-tool-operator<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs llvm">[root<span class="hljs-title">@mysql</span> test]# pkg_name<span class="hljs-operator">=</span>`cat pkg_name-all.txt|awk -F <span class="hljs-string">&quot;_&quot;</span> &#x27;&#123;print$<span class="hljs-number">1</span>&#125;&#x27;`<br>[root<span class="hljs-title">@mysql</span> test]# echo $pkg_name<br><span class="hljs-type">i6000</span>-api-manage <span class="hljs-type">i6000</span>-cmdb-access <span class="hljs-type">i6000</span>-cmdb-automatic <span class="hljs-type">i6000</span>-cmdb-column-pair-config <span class="hljs-type">i6000</span>-cmdb-data-access <span class="hljs-type">i6000</span>-cmdb-front <span class="hljs-type">i6000</span>-cmdb-model <span class="hljs-type">i6000</span>-cmdb-read <span class="hljs-type">i6000</span>-cmdb-write <span class="hljs-type">i6000</span>-cmdb-sync-task nms-agent-ms nms-agent-ui <span class="hljs-type">i6000</span>-cicd <span class="hljs-type">i6000</span>-flow-api <span class="hljs-type">i6000</span>-flow-main pi<span class="hljs-number">6000</span>-audit-web pi<span class="hljs-number">6000</span>-bpm-web pi<span class="hljs-number">6000</span>-mdl-web pi<span class="hljs-number">6000</span>-ua-sso pi<span class="hljs-number">6000</span>-ua-web pi<span class="hljs-number">6000</span>-uds-web <span class="hljs-type">i6000</span>-job-main <span class="hljs-type">i6000</span>-log-backend <span class="hljs-type">i6000</span>-log-reverse <span class="hljs-type">i6000</span>-mobile-app mip-admin mip-analyse mip-gateway mip-manage-user mip-publish <span class="hljs-type">i6000</span>-alert-ms <span class="hljs-type">i6000</span>-alert-ui <span class="hljs-type">i6000</span>-collect-ms <span class="hljs-type">i6000</span>-collect-ui <span class="hljs-type">i6000</span>-kpi-search <span class="hljs-type">i6000</span>-kpicalc <span class="hljs-type">i6000</span>-monitor-public-ms <span class="hljs-type">i6000</span>-angular-front <span class="hljs-type">i6000</span>-cascade <span class="hljs-type">i6000</span>-public-config <span class="hljs-type">i6000</span>-public-portal <span class="hljs-type">i6000</span>-task-admin pi<span class="hljs-number">6000</span>-gateway<span class="hljs-number">2</span> <span class="hljs-type">i6000</span>-safe-access <span class="hljs-type">i6000</span>-scene-main <span class="hljs-type">i6000</span>-show-graphic <span class="hljs-type">i6000</span>-<span class="hljs-keyword">store</span> <span class="hljs-type">i6000</span>-tool-main <span class="hljs-type">i6000</span>-tool-monitor <span class="hljs-type">i6000</span>-tool-operator<br><br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs css">待整理命令：<br>docker load -<span class="hljs-selector-tag">i</span>  将tar_name<span class="hljs-selector-class">.txt</span>中的内容作为数组变量一一输出；<br><br><br></code></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs llvm">[root<span class="hljs-title">@mysql</span> test]# docker images|grep $pkg_name<br>registry.nrxt.com/<span class="hljs-type">i6000</span>/<span class="hljs-type">i6000</span>-public/<span class="hljs-type">i6000</span>-angular-front     <span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220424163738</span>   <span class="hljs-number">5</span><span class="hljs-keyword">c</span><span class="hljs-number">178</span>accd<span class="hljs-number">6</span>df   <span class="hljs-number">2</span> months ago   <span class="hljs-number">294</span>MB<br>cr.registry.res.sgmc.sgcc.com.cn/<span class="hljs-type">i6000</span>/<span class="hljs-type">i6000</span>-angular-front   <span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220424163738</span>   <span class="hljs-number">5</span><span class="hljs-keyword">c</span><span class="hljs-number">178</span>accd<span class="hljs-number">6</span>df   <span class="hljs-number">2</span> months ago   <span class="hljs-number">294</span>MB<br></code></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs autoit">变量<span class="hljs-number">3</span>、images_ID（镜像ID）：<br>root<span class="hljs-symbol">@mysql</span> test]<span class="hljs-meta"># docker images|grep $pkg_name</span><br>registry.nrxt.com/i6000/i6000-public/i6000-angular-front   <span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220424163738</span>   <span class="hljs-number">5</span>c178accd6df   <span class="hljs-number">2</span> months ago   <span class="hljs-number">294</span>MB<br><br>[root<span class="hljs-symbol">@mysql</span> test]<span class="hljs-meta"># docker images|grep $pkg_name|awk -F <span class="hljs-string">&quot; &quot;</span> <span class="hljs-string">&#x27;&#123;print$2&#125;&#x27;</span></span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220424163738</span><br><br>[root<span class="hljs-symbol">@mysql</span> test]<span class="hljs-meta"># images_ID=`docker images|grep $pkg_name|awk -F <span class="hljs-string">&quot; &quot;</span> <span class="hljs-string">&#x27;&#123;print$2&#125;&#x27;</span>`</span><br>[root<span class="hljs-symbol">@mysql</span> test]<span class="hljs-meta"># echo $images_ID</span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220424163738</span><br><br>[root<span class="hljs-symbol">@mysql</span> test]<span class="hljs-meta"># echo $images_ID &gt;images_ID.txt</span><br>[root<span class="hljs-symbol">@mysql</span> test]<span class="hljs-meta"># cat images_ID.txt </span><br><span class="hljs-number">2.0</span><span class="hljs-number">.26</span><span class="hljs-number">.20220424163738</span><br></code></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs vim">变量<span class="hljs-number">4</span>、registry_Address（镜像仓库地址）：<br>[root@mysql test]# sgmc=<span class="hljs-keyword">cr</span>.registry.<span class="hljs-keyword">res</span>.sgmc.sgcc.<span class="hljs-keyword">com</span>.<span class="hljs-keyword">cn</span>/i6000/<br>[root@mysql test]# registry_Address=$sgmc:kg_name:$pkg_version<br>[root@mysql test]# <span class="hljs-keyword">echo</span> $registry_Address<br><span class="hljs-keyword">cr</span>.registry.<span class="hljs-keyword">res</span>.sgmc.sgcc.<span class="hljs-keyword">com</span>.<span class="hljs-keyword">cn</span>/i6000/:kg_name:<span class="hljs-number">2.0</span>.<span class="hljs-number">26.20220424163738</span><br>[root@mysql test]# registry_Address=$sgmc$pkg_name:$pkg_version<br>[root@mysql test]# <span class="hljs-keyword">echo</span> $registry_Address<br><span class="hljs-keyword">cr</span>.registry.<span class="hljs-keyword">res</span>.sgmc.sgcc.<span class="hljs-keyword">com</span>.<span class="hljs-keyword">cn</span>/i6000/i6000-angular-fron<span class="hljs-variable">t:2</span>.<span class="hljs-number">0.26</span>.<span class="hljs-number">20220424163738</span><br><br>[root@mysql test]# <span class="hljs-keyword">echo</span> $registry_Address &gt; registry_Address.txt<br>[root@mysql test]# <span class="hljs-keyword">cat</span> registry_Address.txt<br><span class="hljs-keyword">cr</span>.registry.<span class="hljs-keyword">res</span>.sgmc.sgcc.<span class="hljs-keyword">com</span>.<span class="hljs-keyword">cn</span>/i6000/i6000-angular-fron<span class="hljs-variable">t:2</span>.<span class="hljs-number">0.26</span>.<span class="hljs-number">20220424163738</span><br><br></code></pre></td></tr></table></figure>
+
+
+
+<p>打标签：</p>
+<figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs subunit">[root@mysql test]# docker tag $images_ID $registry_Address<br><span class="hljs-keyword">Error </span>response from daemon: No such image: 2.0.26.20220424163738:latest<br><br>暂未成功，可利用之前生成的images_ID.txt和registry_Address.txt，手工批量整理成打标签和推送镜像的命令。<br></code></pre></td></tr></table></figure>
+
+
+
+<p>docker push $registry_Address</p>
+<p>===================================================</p>
+<h2 id="利用expect实现ssh-key的批量部署"><a href="#利用expect实现ssh-key的批量部署" class="headerlink" title="利用expect实现ssh key的批量部署"></a>利用expect实现ssh key的批量部署</h2><figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs perl">[root@node1 test]<span class="hljs-comment"># cat ssh_push_kye_expect.sh </span><br><span class="hljs-comment">#!/bin/bash</span><br>COLOR=<span class="hljs-string">&quot;echo -e \E[1;32m&quot;</span><br>END=<span class="hljs-string">&quot;\E[0m&quot;</span><br>PASSWORD=<span class="hljs-string">&quot;New_4&amp;5*oA&quot;</span><br>IPLIST=<span class="hljs-string">&quot;</span><br><span class="hljs-string">192.168.23.102</span><br><span class="hljs-string">192.168.23.103</span><br><span class="hljs-string">192.168.23.104</span><br><span class="hljs-string">192.168.23.105</span><br><span class="hljs-string">192.168.23.106</span><br><span class="hljs-string">&quot;</span><br><br>[ ! -f ~<span class="hljs-regexp">/.ssh/id</span>_rsa ] &amp;&amp; ssh-keygen -P <span class="hljs-string">&quot;&quot;</span> -f ~<span class="hljs-regexp">/.ssh/id</span>_rsa &amp;&gt;<span class="hljs-regexp">/dev/null</span><br>rpm -<span class="hljs-keyword">q</span> expect &amp;&gt; <span class="hljs-regexp">/dev/null</span> || yum -<span class="hljs-keyword">y</span> -<span class="hljs-keyword">q</span> install expect &amp;&gt;<span class="hljs-regexp">/dev/null</span><br><span class="hljs-keyword">for</span> ip in $IPLIST ;<span class="hljs-keyword">do</span><br>&#123;    <br>expect &lt;&lt;EOF<br>set timeout <span class="hljs-number">60</span><br>spawn ssh-copy-id $ip<br>expect &#123;<br>        <span class="hljs-string">&quot;yes/no&quot;</span> &#123; <span class="hljs-keyword">send</span> <span class="hljs-string">&quot;yes\r&quot;</span>;exp_continue &#125;<br>        <span class="hljs-string">&quot;password:&quot;</span> &#123; <span class="hljs-keyword">send</span> <span class="hljs-string">&quot;$PASSWORD\r&quot;</span> &#125;<br>&#125;<br>expect <span class="hljs-keyword">eof</span><br>EOF<br>$COLOR<span class="hljs-string">&quot;$ip is ready&quot;</span>$END<br>&#125;&amp;<br>done<br><span class="hljs-keyword">wait</span><br>$COLOR<span class="hljs-string">&quot;Push ssh key is finished!&quot;</span>$END<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs accesslog"><span class="hljs-string">[root@node1 test]</span># cat hosts.txt <br><span class="hljs-number">192.168.23.102</span><br><span class="hljs-number">192.168.23.103</span><br><span class="hljs-number">192.168.23.104</span><br><span class="hljs-number">192.168.23.105</span><br><span class="hljs-number">192.168.23.106</span><br></code></pre></td></tr></table></figure>
+
+
+
+<p>远程批量执行某一条命令：</p>
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs accesslog"><span class="hljs-string">[root@node1 test]</span># for i in `cat hosts.txt`;do ssh $i hostname -I;done<br><span class="hljs-number">192.168.23.102</span> <span class="hljs-number">192</span>.<span class="hljs-number">168</span>.<span class="hljs-number">23</span>.<span class="hljs-number">4</span> <br><span class="hljs-number">192.168.23.103</span> <span class="hljs-number">192</span>.<span class="hljs-number">168</span>.<span class="hljs-number">23</span>.<span class="hljs-number">5</span> <br><span class="hljs-number">192.168.23.104</span> <span class="hljs-number">192</span>.<span class="hljs-number">168</span>.<span class="hljs-number">23</span>.<span class="hljs-number">6</span> <br><span class="hljs-number">192.168.23.105</span> <span class="hljs-number">192</span>.<span class="hljs-number">168</span>.<span class="hljs-number">23</span>.<span class="hljs-number">7</span> <br><span class="hljs-number">192.168.23.106</span> <span class="hljs-number">192</span>.<span class="hljs-number">168</span>.<span class="hljs-number">23</span>.<span class="hljs-number">8</span> <br></code></pre></td></tr></table></figure>
+
+<figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs tap">[root@node1 test]<span class="hljs-comment"># for i in `cat hosts.txt`;do ssh $i free -m;done</span><br>              total        used        free      shared  buff/cache   available<br>Mem:           <span class="hljs-number"> 972 </span>       <span class="hljs-number"> 104 </span>       <span class="hljs-number"> 693 </span>         <span class="hljs-number"> 7 </span>       <span class="hljs-number"> 174 </span>        693<br>Swap:         <span class="hljs-number"> 2047 </span>         <span class="hljs-number"> 0 </span>       2047<br>              total        used        free      shared  buff/cache   available<br>Mem:           <span class="hljs-number"> 972 </span>        <span class="hljs-number"> 88 </span>       <span class="hljs-number"> 765 </span>         <span class="hljs-number"> 7 </span>       <span class="hljs-number"> 118 </span>        739<br>Swap:         <span class="hljs-number"> 2047 </span>         <span class="hljs-number"> 0 </span>       2047<br>              total        used        free      shared  buff/cache   available<br>Mem:           <span class="hljs-number"> 972 </span>        <span class="hljs-number"> 86 </span>       <span class="hljs-number"> 766 </span>         <span class="hljs-number"> 7 </span>       <span class="hljs-number"> 119 </span>        740<br>Swap:         <span class="hljs-number"> 2047 </span>         <span class="hljs-number"> 0 </span>       2047<br>              total        used        free      shared  buff/cache   available<br>Mem:           <span class="hljs-number"> 972 </span>        <span class="hljs-number"> 93 </span>       <span class="hljs-number"> 759 </span>         <span class="hljs-number"> 7 </span>       <span class="hljs-number"> 119 </span>        734<br>Swap:         <span class="hljs-number"> 2047 </span>         <span class="hljs-number"> 0 </span>       2047<br>              total        used        free      shared  buff/cache   available<br>Mem:           <span class="hljs-number"> 972 </span>        <span class="hljs-number"> 93 </span>       <span class="hljs-number"> 760 </span>         <span class="hljs-number"> 7 </span>       <span class="hljs-number"> 118 </span>        734<br>Swap:         <span class="hljs-number"> 2047 </span>         <span class="hljs-number"> 0 </span>       2047<br></code></pre></td></tr></table></figure>
+
+
+
+<p>拷贝部署包到其它采集服务器：</p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs stata">[root@node1 <span class="hljs-keyword">test</span>]# <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> `<span class="hljs-keyword">cat</span> hosts.txt`;<span class="hljs-keyword">do</span> scp ssh_push_kye_expect.<span class="hljs-keyword">sh</span> <span class="hljs-variable">$i</span>:/<span class="hljs-keyword">test</span>;done<br>ssh_push_kye_expect.<span class="hljs-keyword">sh</span>                                                            100%  567   105.2KB/s   00:00    <br>ssh_push_kye_expect.<span class="hljs-keyword">sh</span>                                                            100%  567   192.7KB/s   00:00    <br>ssh_push_kye_expect.<span class="hljs-keyword">sh</span>                                                            100%  567   106.2KB/s   00:00    <br>ssh_push_kye_expect.<span class="hljs-keyword">sh</span>                                                            100%  567    91.9KB/s   00:00    <br>ssh_push_kye_expect.<span class="hljs-keyword">sh</span>                                                            100%  567    93.1KB/s   00:00    <br></code></pre></td></tr></table></figure>
+
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs accesslog"><span class="hljs-string">[root@node1 test]</span># for i in `cat hosts.txt`;do scp ssh_push_kye_expect.sh $i:/test &amp;&amp; echo $i is copyed！;done<br>ssh_push_kye_expect.sh                                                                                                                       <span class="hljs-number">100</span>%  <span class="hljs-number">567</span>   <span class="hljs-number">185</span>.1KB/s   <span class="hljs-number">00</span>:<span class="hljs-number">00</span>    <br><span class="hljs-number">192.168.23.102</span> is copyed！<br>ssh_push_kye_expect.sh                                                                                                                       <span class="hljs-number">100</span>%  <span class="hljs-number">567</span>   <span class="hljs-number">164</span>.8KB/s   <span class="hljs-number">00</span>:<span class="hljs-number">00</span>    <br><span class="hljs-number">192.168.23.103</span> is copyed！<br>ssh_push_kye_expect.sh                                                                                                                       <span class="hljs-number">100</span>%  <span class="hljs-number">567</span>   <span class="hljs-number">291</span>.8KB/s   <span class="hljs-number">00</span>:<span class="hljs-number">00</span>    <br><span class="hljs-number">192.168.23.104</span> is copyed！<br>ssh_push_kye_expect.sh                                                                                                                       <span class="hljs-number">100</span>%  <span class="hljs-number">567</span>   <span class="hljs-number">239</span>.9KB/s   <span class="hljs-number">00</span>:<span class="hljs-number">00</span>    <br><span class="hljs-number">192.168.23.105</span> is copyed！<br>ssh_push_kye_expect.sh                                                                                                                       <span class="hljs-number">100</span>%  <span class="hljs-number">567</span>   <span class="hljs-number">154</span>.7KB/s   <span class="hljs-number">00</span>:<span class="hljs-number">00</span>    <br><span class="hljs-number">192.168.23.106</span> is copyed！<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="批量部署采集服务器："><a href="#批量部署采集服务器：" class="headerlink" title="批量部署采集服务器："></a>批量部署采集服务器：</h2><p> 利用expect实现ssh key的批量部署</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs perl">[root@node1 test]<span class="hljs-comment"># cat ssh_push_kye_expect.sh </span><br><span class="hljs-comment">#!/bin/bash</span><br>COLOR=<span class="hljs-string">&quot;echo -e \E[1;32m&quot;</span><br>END=<span class="hljs-string">&quot;\E[0m&quot;</span><br>PASSWORD=<span class="hljs-string">&quot;New_4&amp;5*oA&quot;</span><br>IPLIST=<span class="hljs-string">&quot;</span><br><span class="hljs-string">20.2.85.192</span><br><span class="hljs-string">20.2.85.193</span><br><span class="hljs-string">20.2.85.194</span><br><span class="hljs-string">20.2.85.195</span><br><span class="hljs-string">20.2.85.196</span><br><span class="hljs-string">20.2.85.197</span><br><span class="hljs-string">20.2.85.198</span><br><span class="hljs-string">20.2.85.199</span><br><span class="hljs-string">20.2.85.200</span><br><span class="hljs-string">20.2.85.201</span><br><span class="hljs-string">20.2.85.202</span><br><span class="hljs-string">20.2.85.203</span><br><span class="hljs-string">&quot;</span><br><br>[ ! -f ~<span class="hljs-regexp">/.ssh/id</span>_rsa ] &amp;&amp; ssh-keygen -P <span class="hljs-string">&quot;&quot;</span> -f ~<span class="hljs-regexp">/.ssh/id</span>_rsa &amp;&gt;<span class="hljs-regexp">/dev/null</span><br>rpm -<span class="hljs-keyword">q</span> expect &amp;&gt; <span class="hljs-regexp">/dev/null</span> || yum -<span class="hljs-keyword">y</span> -<span class="hljs-keyword">q</span> install expect &amp;&gt;<span class="hljs-regexp">/dev/null</span><br><span class="hljs-keyword">for</span> ip in $IPLIST ;<span class="hljs-keyword">do</span><br>&#123;    <br>expect &lt;&lt;EOF<br>set timeout <span class="hljs-number">60</span><br>spawn ssh-copy-id $ip<br>expect &#123;<br>        <span class="hljs-string">&quot;yes/no&quot;</span> &#123; <span class="hljs-keyword">send</span> <span class="hljs-string">&quot;yes\r&quot;</span>;exp_continue &#125;<br>        <span class="hljs-string">&quot;password:&quot;</span> &#123; <span class="hljs-keyword">send</span> <span class="hljs-string">&quot;$PASSWORD\r&quot;</span> &#125;<br>&#125;<br>expect <span class="hljs-keyword">eof</span><br>EOF<br>$COLOR<span class="hljs-string">&quot;$ip is ready&quot;</span>$END<br>&#125;&amp;<br>done<br><span class="hljs-keyword">wait</span><br>$COLOR<span class="hljs-string">&quot;Push ssh key is finished!&quot;</span>$END<br></code></pre></td></tr></table></figure>
+
+
+
+<p>1、添加要部署的服务器地址</p>
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs accesslog"> cat hosts.txt <br><span class="hljs-number">20.2.85.192</span><br><span class="hljs-number">20.2.85.193</span><br><span class="hljs-number">20.2.85.194</span><br><span class="hljs-number">20.2.85.195</span><br><span class="hljs-number">20.2.85.196</span><br><span class="hljs-number">20.2.85.197</span><br><span class="hljs-number">20.2.85.198</span><br><span class="hljs-number">20.2.85.199</span><br><span class="hljs-number">20.2.85.200</span><br><span class="hljs-number">20.2.85.201</span><br><span class="hljs-number">20.2.85.202</span><br><span class="hljs-number">20.2.85.203</span><br></code></pre></td></tr></table></figure>
+
+
+
+<p>2、拷贝部署包到各服务器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> `<span class="hljs-built_in">cat</span> hosts.txt`;<span class="hljs-keyword">do</span> scp -rp /home/nms/NmsInsideCollectServer <span class="hljs-variable">$i</span>:/home/nms/ &amp;&amp; <span class="hljs-built_in">echo</span> <span class="hljs-variable">$i</span> is copyed！;<span class="hljs-keyword">done</span></span><br></code></pre></td></tr></table></figure>
+
+
+
+<p>3、修改start.sh文件中个性配置</p>
+<p>使用wincp，修改start.sh文件中的采集集群和节点。</p>
+<p>4、启动nms服务：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> `<span class="hljs-built_in">cat</span> hosts.txt`;<span class="hljs-keyword">do</span> ssh <span class="hljs-variable">$i</span> /home/nms/NmsInsideCollectServer/stat.sh;<span class="hljs-keyword">done</span></span><br></code></pre></td></tr></table></figure>
+
+
+
+<p>==============</p>
+<p>为防止泄露一台服务器的密码，而导致其它服务器也被暴漏。可对私钥进行加密，并且可以设置代理，每次登录，输入一次私钥密码，后期在登出之前再操作就不用输入私钥的秘密了。</p>
+<p>其他人再次登录时，仍然是需要输入私钥的密码，才可以免密登录其他服务器，这样就提升了安全性。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%A3%80%E4%BF%AE/">检修</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%89%B9%E9%87%8F%E9%83%A8%E7%BD%B2/">批量部署</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/07/09/%E5%A4%9A%E8%8A%82%E7%82%B9%E4%B9%8B%E9%97%B4%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">多节点之间免密登录</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/07/05/%E7%AC%AC%E4%BA%94%E5%91%A8%E4%BD%9C%E4%B8%9A-2022-7-5/">
+                        <span class="hidden-mobile">第五周作业-2022-7-5</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
